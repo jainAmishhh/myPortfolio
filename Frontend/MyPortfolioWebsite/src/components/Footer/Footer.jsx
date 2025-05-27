@@ -85,7 +85,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://twitter.com/your_handle"
+                href="https://x.com/AmishJain423035"
                 target="_blank"
                 aria-label="X (Twitter)"
               >
