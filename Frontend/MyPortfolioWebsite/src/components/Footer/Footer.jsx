@@ -29,9 +29,7 @@ const Footer = () => {
             </h3>
             <ul class="text-sm space-y-1">
               <li>
-                <NavLink 
-                to="/"
-                 class="hover:underline">
+                <NavLink to="/" class="hover:underline">
                   Home
                 </NavLink>
               </li>
@@ -57,11 +55,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* <div class="flex space-x-4">
-        <a href="#" aria-label="Instagram" class="hover:text-yellow-400">Instagram</a>
-        <a href="#" aria-label="Facebook" class="hover:text-yellow-400">Facebook</a>
-      </div> */}
           <div class="ml-32">
             <h3 class="text-xl font-semibold mb-2 text-yellow-500">Social</h3>
             <div class="flex space-x-4 mt-2">
