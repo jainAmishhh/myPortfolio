@@ -7,23 +7,9 @@ const Services = () => {
     <section id="services" class="min-h-screen bg-[#2D4739] text-white py-12 px-4 md:px-8 lg:px-16 flex flex-col items-center overflow-hidden relative">
       <div class="w-full h-12"></div>
       <div class="text-center mb-12">
-        <div class="text-green-400 text-sm font-medium uppercase tracking-wider mb-2 flex items-center justify-center">
-          <svg
-            class="w-4 h-4 mr-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 0a9 9 0 01-9-9m9 9a9 9 0 00-9 9m-1-9h10"
-            ></path>
-          </svg>
-          SERVICES
-        </div>
+        <p className="text-xl uppercase tracking-wide text-center text-yellow-500 mb-2 font-bold">
+          — Services
+        </p>
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           What <span class="text-yellow-500">Services</span> 
           <div class="bg-yellow-500 w-[50%] h-0.5 rounded-2xl mx-2 my-0.5"></div>

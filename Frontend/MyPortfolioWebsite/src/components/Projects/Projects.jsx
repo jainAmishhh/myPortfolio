@@ -42,7 +42,7 @@ const Projects = () => {
       <div class="w-full h-16"></div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-yellow-500 text-center">
-          My Project Showcase
+          — My Project Showcase
         </h2>
 
         {Object.entries(projectsData).map(([tech, projects]) => (

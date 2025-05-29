@@ -147,6 +147,21 @@ const About = () => {
             </div>
           </div>
 
+          {/* Hobbies & Interests */}
+<div className="bg-yellow-100 text-green-900 w-full h-fit rounded-full flex flex-col justify-center items-center text-center p-4 shadow-lg shadow-green-950">
+  <h3 className="font-semibold text-lg mb-4">Hobbies & Interests</h3>
+  <div className="grid grid-rows-2 grid-cols-3 gap-3 text-sm text-center">
+  <div className="col-span-1"> Exploring new trends</div>
+  <div className="col-span-1"> Reading</div>
+  <div className="col-span-1"> Music and Podcasts</div>
+  <div className="col-span-1"></div> {/* Empty cell for symmetry */}
+  <div className="col-span-1"> Gaming & puzzles</div>
+  <div className="col-span-1"></div> {/* Empty cell for symmetry */}
+</div>
+
+</div>
+
+
           <p className="text-white">
             💬 Whether I’m writing algorithms or building full-stack apps, I
             love turning ideas into clean, efficient, and impactful code.

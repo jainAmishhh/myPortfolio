@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <section id="contactMe" className="bg-[#2D4739] text-white py-16 px-6">
       <div class="w-full h-12"></div>
-      <h2 className="text-yellow-500 font-bold text-4xl text-center mb-6">Contact Me</h2>
+      <h2 className="text-yellow-500 font-bold text-4xl text-center mb-6">— Contact Me</h2>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <div>
           <h2 className="text-4xl font-bold text-yellow-400 mb-4">
@@ -19,7 +19,7 @@ export default function ContactSection() {
           <form className="space-y-6">
             <div>
               <label className="block mb-1 font-semibold text-sm">
-                01. What’s your name?
+                01. What’s your name?<span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="text"
@@ -31,7 +31,7 @@ export default function ContactSection() {
 
             <div>
               <label className="block mb-1 font-semibold text-sm">
-                02. What’s your email address?
+                02. What’s your email address?<span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="email"
@@ -43,7 +43,7 @@ export default function ContactSection() {
 
             <div>
               <label className="block mb-1 font-semibold text-sm">
-                03. What’s your phone number?
+                03. What’s your phone number?<span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="tel"
@@ -67,7 +67,7 @@ export default function ContactSection() {
 
             <div>
               <label className="block mb-1 font-semibold text-sm">
-                05. Tell me about your project
+                05. Tell me about your project<span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="text"
@@ -100,14 +100,19 @@ export default function ContactSection() {
         {/* Contact Info */}
         <div className="space-y-10">
           <div>
-            <h4 className="text-yellow-400 font-semibold mb-2">Reach Out</h4>
-            <p>Email: jainamish1511@gmail.com</p>
-            <p>Phone: +91 93697 37943</p>
+            <h4 className="text-yellow-400 font-semibold mb-2">Nationality</h4>
+            <p>Indian</p>
           </div>
 
           <div>
             <h4 className="text-yellow-400 font-semibold mb-2">Based In</h4>
             <p>Bhopal, India</p>
+          </div>
+
+          <div>
+            <h4 className="text-yellow-400 font-semibold mb-2">Reach Out</h4>
+            <p>Email: jainamish1511@gmail.com</p>
+            <p>Phone: +91 93697 37943</p>
           </div>
 
           <div>

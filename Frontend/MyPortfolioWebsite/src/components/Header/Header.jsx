@@ -26,6 +26,11 @@ const Header = () => {
               Services
             </a>
           </li>
+          <li>
+            <a href="#experience" className="hover:text-orange-400 hover:underline">
+              Experience 
+            </a>
+          </li>
         </ul>
       </nav>
       <a
