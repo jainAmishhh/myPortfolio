@@ -18,7 +18,7 @@ export default function ContactSection() {
 
           <form className="space-y-6">
             <div>
-              <label className="block mb-1 font-semibold text-sm">
+              <label id="name" className="block mb-1 font-semibold text-sm">
                 01. What’s your name?<span className="text-red-500 ml-1">*</span>
               </label>
               <input
@@ -30,7 +30,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-sm">
+              <label id="email" className="block mb-1 font-semibold text-sm">
                 02. What’s your email address?<span className="text-red-500 ml-1">*</span>
               </label>
               <input
@@ -42,7 +42,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-sm">
+              <label id="number" className="block mb-1 font-semibold text-sm">
                 03. What’s your phone number?<span className="text-red-500 ml-1">*</span>
               </label>
               <input
@@ -54,7 +54,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-sm">
+              <label id="services" className="block mb-1 font-semibold text-sm">
                 04. What services are you looking for?
               </label>
               <select className="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-yellow-500 py-2">
@@ -66,7 +66,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-sm">
+              <label id="aboutProject" className="block mb-1 font-semibold text-sm">
                 05. Tell me about your project<span className="text-red-500 ml-1">*</span>
               </label>
               <input
@@ -78,7 +78,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-sm">
+              <label id="message" className="block mb-1 font-semibold text-sm">
                 Message
               </label>
               <textarea
