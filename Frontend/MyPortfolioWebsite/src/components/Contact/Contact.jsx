@@ -16,11 +16,11 @@ export default function ContactSection() {
     setFormData((data) => ({ ...data, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await fetch("/contactMe", {
+      const res = await fetch("http://localhost:5000/contactMe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -28,24 +28,29 @@ export default function ContactSection() {
         body: JSON.stringify(formData)
       });
 
+      const contentType = res.headers.get("content-type");
       if (!res.ok) {
-      const errorText = await res.text();
-      alert("Failed to send message: " + errorText);
-      return;
-    }
+        const errorText = await res.text();
+        alert("Failed to send message: " + errorText);
+        return;
+      }
 
-      const data = await res.json();
-
-      if (data.success) {
-        alert("Message sent successfully!");
+      if (contentType && contentType.includes("application/json")) {
+        const data = await res.json();
+        if (data.success) {
+          alert("Message sent successfully!");
+        } else {
+          alert("Failed to send message: " + data.message);
+        }
       } else {
-        alert("Failed to send message: " + data.message);
+        alert("Unexpected response format.");
       }
     } catch (error) {
       alert("Something went wrong!");
       console.error("Something went wrong", error);
     }
   };
+
 
   return (
     <section
