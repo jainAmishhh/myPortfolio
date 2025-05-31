@@ -5,7 +5,7 @@ const Home = () => {
     <>
       <section
         id="home"
-        className="min-h-screen bg-[#2D4739] flex flex-col md:flex-row items-center justify-between px-16 py-4"
+        className="min-h-screen bg-[#2D4739] flex flex-col md:flex-row items-center justify-between px-16 py-4 mt-4"
       >
         <div className="md:w-1/2 space-y-6">
           <p className="text-2xl text-gray-400">Hello There!</p>
@@ -37,7 +37,7 @@ const Home = () => {
         <div className="md:w-1/2 mt-10 md:mt-0 relative">
           <div className="absolute -inset-6 rounded-full bg-yellow-500 opacity-30 blur-xl"></div>
           <img
-            src="https://via.placeholder.com/300x300.png?text=Jensen"
+            src="/Amishhh.jpg"
             alt="Amish"
             className="relative z-10 rounded-full w-72 mx-auto"
           />

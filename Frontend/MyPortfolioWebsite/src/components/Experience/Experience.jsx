@@ -26,7 +26,11 @@ const educationData = [
 ];
 
 const professionalData = [
-
+  {
+    title: "Full-Stack Web Developer",
+    tenor: "Self-initiated Projects — Jan 2024 – Present",
+    details: ["Built a personal portfolio website using the MERN stack (MongoDB, Express, React, Node.js) to gain hands-on experience in full-stack development.", "Built a Razorpay Clone using React and TailwindCSS to simulate real-world payment gateway UI", "Creating a MERN-stack food community app with user authentication, chat features, and real-time updates using Socket.IO."]
+  }
 ]
 
 const Experience = () => {
@@ -85,11 +89,15 @@ const Experience = () => {
             <ul className="space-y-6">
               {professionalData.map((exp, index) => (
                 <li key={index}>
-                  <p className="text-sm text-gray-500">{exp.year}</p>
+                  <p className="text-sm text-gray-500">{exp.tenor}</p>
                   <h4 className="text-lg font-semibold text-green-900">
-                    {exp.institute}
+                    {exp.title}
                   </h4>
-                  <p className="text-sm text-gray-700">{exp.degree}</p>
+                  <ul className="text-sm text-gray-700 list-disc ml-5 mt-2 space-y-1">
+        {exp.details.map((detail, i) => (
+          <li key={i}>{detail}</li>
+        ))}
+      </ul>
                 </li>
               ))}
             </ul>

@@ -26,8 +26,8 @@ const shareInfo = asyncHandler(async (req, res, next) => {
 
         await sendEmail({
             to: process.env.GMAIL_ID,
-            subject: `New Contact Form Submission for ${services}`,
-            text: `${aboutProject}`,
+            subject: `New Contact Form Submission for ${req.body.services} from ${req.body.name}`,
+            text: `${req.body.aboutProject}`,
             html: `
               <h3>New Contact Request</h3>
               <p><strong>Name:</strong> ${name}</p>

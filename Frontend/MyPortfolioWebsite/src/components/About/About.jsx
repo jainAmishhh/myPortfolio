@@ -9,14 +9,14 @@ const About = () => {
           </h2>
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
         <div className="relative w-full md:w-1/2 flex justify-center">
-          <div className="relative w-80 h-80 rounded-full overflow-hidden z-10">
+          <div className="relative w-80 h-80 md:w-[60%] md:h-[40%]  rounded-[40%] md:rounded-full overflow-hidden z-10">
             <img
-              src="/your-image.png"
+              src="/Amishh.jpg"
               alt="Amish Jain"
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="absolute top-0 w-80 h-80 rounded-full bg-yellow-400 z-0"></div>
+          {/* <div className="absolute top-0 w-80 h-80 rounded-full bg-yellow-400 z-0"></div> */}
         </div>
 
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
@@ -169,10 +169,11 @@ const About = () => {
 
           {/* CV Button & Signature */}
           <div className="flex items-center justify-center md:justify-start gap-6 mt-4">
-            <button className="flex items-center gap-3 px-6 py-3 bg-yellow-400 text-green-950 rounded-full font-medium hover:bg-yellow-300 transition">
+            <a href="/Amish-Jain-Resume.pdf"
+              download className="flex items-center gap-3 px-6 py-3 bg-yellow-400 text-green-950 rounded-full font-medium hover:scale-110 hover:border-4 hover:border-green-950 transition-all duration-300 shadow-2xl shadow-green-950">
               Download Resume
               <span className="text-xl">→</span>
-            </button>
+            </a>
             <span className="text-yellow-500 text-xl italic font-signature">
               Amish Jain <span className="text-green-950">.</span>
             </span>
