@@ -1,0 +1,26 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Complete frontend and backend code for my portfolio website",
+  "homepage": "https://github.com/jainAmishhh/myPortfolio#readme",
+  "bugs": {
+    "url": "https://github.com/jainAmishhh/myPortfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainAmishhh/myPortfolio.git"
+  },
+  "license": "ISC",
+  "author": "Amish Jain",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "backend": "cd Backend && npm run dev",
+    "frontend": "cd Frontend/MyPortfolioWebsite && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
