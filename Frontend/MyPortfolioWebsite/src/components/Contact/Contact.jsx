@@ -28,6 +28,12 @@ export default function ContactSection() {
         body: JSON.stringify(formData)
       });
 
+      if (!res.ok) {
+      const errorText = await res.text();
+      alert("Failed to send message: " + errorText);
+      return;
+    }
+
       const data = await res.json();
 
       if (data.success) {
@@ -43,7 +49,7 @@ export default function ContactSection() {
 
   return (
     <section
-      id="contactMeForm"
+      id="contactMe"
       name="contactMeForm"
       className="bg-[#2D4739] text-white py-16 px-6"
     >
