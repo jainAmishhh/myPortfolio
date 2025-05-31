@@ -11,7 +11,6 @@ const Header = () => {
       <div className="flex justify-between items-center px-6 md:px-16 py-4">
         <div className="font-bold text-xl">Amish Jain</div>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
@@ -20,29 +19,40 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-orange-400 hover:underline">
+              <a
+                href="#about"
+                className="hover:text-orange-400 hover:underline"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" className="hover:text-orange-400 hover:underline">
+              <a
+                href="#projects"
+                className="hover:text-orange-400 hover:underline"
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-orange-400 hover:underline">
+              <a
+                href="#services"
+                className="hover:text-orange-400 hover:underline"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#experience" className="hover:text-orange-400 hover:underline">
+              <a
+                href="#experience"
+                className="hover:text-orange-400 hover:underline"
+              >
                 Experience
               </a>
             </li>
           </ul>
         </nav>
 
-        {/* Desktop Button */}
         <a
           href="#contactMe"
           className="hidden md:inline-block bg-white text-green-950 px-5 py-2 rounded-full font-bold"
@@ -50,13 +60,11 @@ const Header = () => {
           Contact Me
         </a>
 
-        {/* Mobile Hamburger Icon */}
         <button className="md:hidden" onClick={toggleMenu}>
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-green-950 text-white px-6 pb-4">
           <ul className="space-y-4">

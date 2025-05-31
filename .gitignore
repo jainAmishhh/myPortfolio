@@ -1,8 +1,10 @@
-# Ignore node modules
-node_modules/
+# Ignore all node_modules directories, even in subfolders
+**/node_modules/
 
-# Ignore environment files
-.env
+# Ignore all .env files, even in subfolders
+**/.env
+
+**/.gitignore
 
 # Optional: Ignore log files and system files
 npm-debug.log*

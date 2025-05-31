@@ -7,7 +7,6 @@ const ServiceModal = ({ service, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-[#2D4739]/30 backdrop-blur-sm flex justify-center items-center">
-
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -37,9 +36,7 @@ const ServiceModal = ({ service, onClose }) => {
               ></path>
             </svg>
           </div>
-          <h2 className="text-2xl font-bold text-green-900">
-            {service.title}
-          </h2>
+          <h2 className="text-2xl font-bold text-green-900">{service.title}</h2>
         </div>
         <p className="text-gray-600 text-sm">{service.fullDescription}</p>
       </motion.div>

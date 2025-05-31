@@ -1,30 +1,35 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Code, ExternalLink, ChevronDown } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Code, ExternalLink, ChevronDown } from "lucide-react";
 
 const projectsData = {
   Frontend: [
     {
-      title: 'Razorpay Clone',
-      description: 'A full-stack clone of Razorpay, a popular Indian payment gateway.',
-      details: 'This clone replicates Razorpay\'s UI and payment flow using React, TailwindCSS, and a fake backend for testing transactions.',
-      link: 'https://example.com',
+      title: "Razorpay Clone",
+      description:
+        "A full-stack clone of Razorpay, a popular Indian payment gateway.",
+      details:
+        "This clone replicates Razorpay's UI and payment flow using React, TailwindCSS, and a fake backend for testing transactions.",
+      link: "https://example.com",
     },
   ],
   MERN: [
     {
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio with animated routing and custom UI.',
-      details: 'Built with React, React Router, and TailwindCSS. Includes animations, theme switching, and a contact form.',
-      link: 'https://example.com',
+      title: "Portfolio Website",
+      description: "Responsive portfolio with animated routing and custom UI.",
+      details:
+        "Built with React, React Router, and TailwindCSS. Includes animations, theme switching, and a contact form.",
+      link: "https://example.com",
     },
   ],
   On_Going: [
     {
-      title: 'TNT',
-      description: 'A MERN-based food community platform with chat and video tutorials.',
-      details: 'Currently under development. Features real-time chat, recipe uploads, and video guides.',
-      link: '#',
+      title: "TNT",
+      description:
+        "A MERN-based food community platform with chat and video tutorials.",
+      details:
+        "Currently under development. Features real-time chat, recipe uploads, and video guides.",
+      link: "#",
     },
   ],
 };
@@ -37,7 +42,10 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="min-h-screen bg-[#2D4739] text-white py-12 px-4">
+    <section
+      id="projects"
+      className="min-h-screen bg-[#2D4739] text-white py-12 px-4"
+    >
       <div className="w-full h-16"></div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-yellow-500 text-center">
@@ -69,7 +77,7 @@ const Projects = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className={`cursor-pointer bg-transparent rounded-2xl p-6 shadow-lg shadow-green-950 border transition-all ${
-                      isExpanded ? 'border-yellow-500' : 'border-transparent'
+                      isExpanded ? "border-yellow-500" : "border-transparent"
                     }`}
                   >
                     <div className="flex justify-between items-center mb-3">
@@ -77,7 +85,9 @@ const Projects = () => {
                       <ChevronDown
                         size={18}
                         className={`transition-transform duration-200 ${
-                          isExpanded ? 'rotate-180 text-yellow-500' : 'text-gray-400'
+                          isExpanded
+                            ? "rotate-180 text-yellow-500"
+                            : "text-gray-400"
                         }`}
                       />
                     </div>
@@ -85,19 +95,21 @@ const Projects = () => {
                     <h4 className="text-lg font-semibold text-yellow-500 mb-2">
                       {project.title}
                     </h4>
-                    <p className="text-gray-400 text-sm">{project.description}</p>
+                    <p className="text-gray-400 text-sm">
+                      {project.description}
+                    </p>
 
                     <AnimatePresence>
                       {isExpanded && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
+                          animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                           className="overflow-hidden mt-4 text-sm text-gray-300"
                         >
                           <p className="mb-2">{project.details}</p>
-                          {project.link !== '#' && (
+                          {project.link !== "#" && (
                             <a
                               href={project.link}
                               target="_blank"

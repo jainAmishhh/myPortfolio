@@ -16,16 +16,16 @@ export default function ContactSection() {
     setFormData((data) => ({ ...data, [name]: value }));
   };
 
-    const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const res = await fetch("http://localhost:5000/contactMe", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       const contentType = res.headers.get("content-type");
@@ -50,7 +50,6 @@ export default function ContactSection() {
       console.error("Something went wrong", error);
     }
   };
-
 
   return (
     <section
@@ -180,7 +179,6 @@ export default function ContactSection() {
           </form>
         </div>
 
-        {/* Contact Info */}
         <div className="space-y-10">
           <div>
             <h4 className="text-yellow-400 font-semibold mb-2">Nationality</h4>

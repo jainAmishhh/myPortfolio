@@ -29,9 +29,13 @@ const professionalData = [
   {
     title: "Full-Stack Web Developer",
     tenor: "Self-initiated Projects — Jan 2024 – Present",
-    details: ["Built a personal portfolio website using the MERN stack (MongoDB, Express, React, Node.js) to gain hands-on experience in full-stack development.", "Built a Razorpay Clone using React and TailwindCSS to simulate real-world payment gateway UI", "Creating a MERN-stack food community app with user authentication, chat features, and real-time updates using Socket.IO."]
-  }
-]
+    details: [
+      "Built a personal portfolio website using the MERN stack (MongoDB, Express, React, Node.js) to gain hands-on experience in full-stack development.",
+      "Built a Razorpay Clone using React and TailwindCSS to simulate real-world payment gateway UI",
+      "Creating a MERN-stack food community app with user authentication, chat features, and real-time updates using Socket.IO.",
+    ],
+  },
+];
 
 const Experience = () => {
   return (
@@ -75,7 +79,6 @@ const Experience = () => {
             </ul>
           </div>
 
-          {/* You can create a similar block for Work Experience here */}
           <div className="bg-green-50 p-8 rounded-2xl shadow-md">
             <div className="flex items-center mb-6">
               <div className="bg-yellow-500 text-white p-3 rounded-full">
@@ -94,10 +97,10 @@ const Experience = () => {
                     {exp.title}
                   </h4>
                   <ul className="text-sm text-gray-700 list-disc ml-5 mt-2 space-y-1">
-        {exp.details.map((detail, i) => (
-          <li key={i}>{detail}</li>
-        ))}
-      </ul>
+                    {exp.details.map((detail, i) => (
+                      <li key={i}>{detail}</li>
+                    ))}
+                  </ul>
                 </li>
               ))}
             </ul>

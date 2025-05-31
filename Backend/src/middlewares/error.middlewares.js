@@ -8,7 +8,8 @@ const errorHandler = (err, req, res, next) => {
 
   // If the error isn't an instance of APIerror, wrap it
   if (!(error instanceof APIerror)) {
-    const statusCode = err?.statusCode || (err instanceof mongoose.Error ? 400 : 500);
+    const statusCode =
+      err?.statusCode || (err instanceof mongoose.Error ? 400 : 500);
     const message = err?.message || "Something went wrong";
 
     error = new APIerror(statusCode, message, err?.errors || [], err?.stack);
@@ -18,7 +19,7 @@ const errorHandler = (err, req, res, next) => {
   const response = {
     success: false,
     message: error.message,
-    ...(process.env.NODE_ENV === "development" && { stack: error.stack })
+    ...(process.env.NODE_ENV === "development" && { stack: error.stack }),
   };
 
   // Use a fallback in case statusCode is missing

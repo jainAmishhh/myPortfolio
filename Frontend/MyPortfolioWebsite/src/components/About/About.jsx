@@ -2,11 +2,14 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-[#2D4739] text-white py-16 px-4 md:px-8 lg:px-16 flex flex-col items-center overflow-hidden relative">
+    <section
+      id="about"
+      className="min-h-screen bg-[#2D4739] text-white py-16 px-4 md:px-8 lg:px-16 flex flex-col items-center overflow-hidden relative"
+    >
       <div class="w-full h-12"></div>
       <h2 className="text-4xl font-bold mb-16 text-yellow-500 text-center">
-            — About Me
-          </h2>
+        — About Me
+      </h2>
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
         <div className="relative w-full md:w-1/2 flex justify-center">
           <div className="relative w-80 h-80 md:w-[60%] md:h-[40%]  rounded-[40%] md:rounded-full overflow-hidden z-10">
@@ -16,7 +19,6 @@ const About = () => {
               className="object-cover w-full h-full"
             />
           </div>
-          {/* <div className="absolute top-0 w-80 h-80 rounded-full bg-yellow-400 z-0"></div> */}
         </div>
 
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
@@ -37,7 +39,6 @@ const About = () => {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 mt-10">
-            {/* What I Do Best */}
             <div className="bg-yellow-500 text-green-950 w-72 h-72 rounded-full flex flex-col justify-center items-center text-center p-6 shadow-lg shadow-green-950">
               <h3 className="font-semibold text-lg mb-4">What I Do Best</h3>
               <ul className="list-disc list-inside text-sm space-y-1 text-center">
@@ -49,7 +50,6 @@ const About = () => {
               </ul>
             </div>
 
-            {/* Tech Stack */}
             <div className="bg-green-950 text-yellow-500 w-72 h-72 rounded-full flex flex-col justify-center items-center text-center p-6 shadow-lg shadow-yellow-600">
               <h3 className="font-semibold text-center md:text-left mb-4">
                 Tech Stack I Work With:
@@ -147,30 +147,29 @@ const About = () => {
             </div>
           </div>
 
-          {/* Hobbies & Interests */}
-<div className="bg-yellow-100 text-green-900 w-full h-fit rounded-full flex flex-col justify-center items-center text-center p-4 shadow-lg shadow-green-950">
-  <h3 className="font-semibold text-lg mb-4">Hobbies & Interests</h3>
-  <div className="grid grid-rows-2 grid-cols-3 gap-3 text-sm text-center">
-  <div className="col-span-1"> Exploring new trends</div>
-  <div className="col-span-1"> Reading</div>
-  <div className="col-span-1"> Music and Podcasts</div>
-  <div className="col-span-1"></div> {/* Empty cell for symmetry */}
-  <div className="col-span-1"> Gaming & puzzles</div>
-  <div className="col-span-1"></div> {/* Empty cell for symmetry */}
-</div>
-
-</div>
-
+          <div className="bg-yellow-100 text-green-900 w-full h-fit rounded-full flex flex-col justify-center items-center text-center p-4 shadow-lg shadow-green-950">
+            <h3 className="font-semibold text-lg mb-4">Hobbies & Interests</h3>
+            <div className="grid grid-rows-2 grid-cols-3 gap-3 text-sm text-center">
+              <div className="col-span-1"> Exploring new trends</div>
+              <div className="col-span-1"> Reading</div>
+              <div className="col-span-1"> Music and Podcasts</div>
+              <div className="col-span-1"></div>
+              <div className="col-span-1"> Gaming & puzzles</div>
+              <div className="col-span-1"></div>
+            </div>
+          </div>
 
           <p className="text-white">
             💬 Whether I’m writing algorithms or building full-stack apps, I
             love turning ideas into clean, efficient, and impactful code.
           </p>
 
-          {/* CV Button & Signature */}
           <div className="flex items-center justify-center md:justify-start gap-6 mt-4">
-            <a href="/Amish-Jain-Resume.pdf"
-              download className="flex items-center gap-3 px-6 py-3 bg-yellow-400 text-green-950 rounded-full font-medium hover:scale-110 hover:border-4 hover:border-green-950 transition-all duration-300 shadow-2xl shadow-green-950">
+            <a
+              href="/Amish-Jain-Resume.pdf"
+              download
+              className="flex items-center gap-3 px-6 py-3 bg-yellow-400 text-green-950 rounded-full font-medium hover:scale-110 hover:border-4 hover:border-green-950 transition-all duration-300 shadow-2xl shadow-green-950"
+            >
               Download Resume
               <span className="text-xl">→</span>
             </a>
