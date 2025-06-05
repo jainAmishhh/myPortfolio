@@ -4,7 +4,10 @@ import { errorHandler } from "./middlewares/error.middlewares.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://myportfolio.vercel.app'], // your Vercel domain
+  credentials: true,
+}));
 app.use(express.json());
 app.use(express.static("public"));
 // custome middleware
