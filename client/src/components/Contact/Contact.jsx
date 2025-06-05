@@ -20,7 +20,7 @@ export default function ContactSection() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/contactMe", {
+      const res = await fetch("https://amishhh15.onrender.com/contactMe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
