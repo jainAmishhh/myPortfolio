@@ -20,7 +20,7 @@ export default function ContactSection() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://amishhh15.onrender.com/contactMe", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/contactMe`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
