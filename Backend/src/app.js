@@ -5,7 +5,7 @@ import { errorHandler } from "./middlewares/error.middlewares.js";
 const app = express();
 
 app.use(cors({
-  origin: ['https://myportfolio.vercel.app'], // your Vercel domain
+  origin: ['https://amishhh15.vercel.app'], // your Vercel domain
   credentials: true,
 }));
 app.use(express.json());
