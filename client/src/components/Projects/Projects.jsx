@@ -10,7 +10,7 @@ const projectsData = {
         "A full-stack clone of Razorpay, a popular Indian payment gateway.",
       details:
         "This clone replicates Razorpay's UI and payment flow using React, TailwindCSS, and a fake backend for testing transactions.",
-      link: "https://example.com",
+      link: "https://razor-pay-clone-three.vercel.app/",
     },
   ],
   MERN: [
